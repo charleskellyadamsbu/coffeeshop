@@ -39,7 +39,7 @@ bagelNumber.addEventListener('change', e => {
 });
 
 function updatePrice() {
-    let totalAmount = (coffeeAmount * 5.00) + (teaAmount * 2.00) + (bagelAmount * 10.00);
+    let totalAmount = (coffeeAmount * 11.00) + (teaAmount * 7.00) + (bagelAmount * 3.00);
     price.textContent = "Price: $" + totalAmount;
 }
 
