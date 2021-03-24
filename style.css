@@ -1,22 +1,7 @@
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100vh;
-}
-
-header {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
+input {
+    color: black;
 }
 
 img {
@@ -24,26 +9,139 @@ img {
     height: 200px;
 }
 
-.item-container {
-    background-color: #352e2f98;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    height: 100vh;
-    color: white;
-    font-size: 64px;
+@media only screen and (max-width: 425px) {
+    * {
+        box-sizing: border-box;
+        font-family: 'Lexend', sans-serif;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .price-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
 }
 
-.items {
-    display: flex;
-    flex-direction: row;
+@media only screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+        font-family: 'Lexend', sans-serif;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .price-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-    padding: 25px;
+@media only screen and (min-width: 768px) {
+    * {
+        box-sizing: border-box;
+        font-family: 'Lexend', sans-serif;
+        color: white;
+    }
+    
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .item-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .price-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
 }
