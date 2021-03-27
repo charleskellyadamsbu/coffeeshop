@@ -13,8 +13,7 @@ coffeeNumber.addEventListener('change', e => {
     if(isNaN(coffeeAmount)) {
         coffeeAmount = 0;
     }
-
-    console.log("TEST");
+    
     updatePrice();
 });
 
